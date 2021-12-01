@@ -1,0 +1,56 @@
+#myinput {
+    box-sizing: border-box;
+    color: gray;
+    height: 65px;
+    padding-left: 20px;
+    font-size: 40px;
+    margin: 20px auto 0;
+    width: 80%;
+    text-align: center;
+    outline: none;
+    position: fixed;
+    left: 50%;
+    transform: translate3d(-50%, 0px, 0px);
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #ddd;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #ddd;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #ddd;
+}
+
+ul {
+    margin: 95px auto 10px;
+    list-style-type: none;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    width: 80%;
+    height: calc(100% - 105px);
+    overflow: auto;
+}
+
+li {
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    padding: 0 20px;
+    margin: 5px auto;
+    box-sizing: border-box;
+}
+
+li:hover {
+    text-decoration: line-through;
+    background-color: rgba(50, 50, 50, 0.1);
+    color: rgba(200, 0, 0, 0.3);
+}
