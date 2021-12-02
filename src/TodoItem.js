@@ -4,7 +4,6 @@ class TodoItem extends Component {
   constructor(props) {
     super(props);
     this.handleItemClick = this.handleItemClick.bind(this);
-    this.state = {};
   }
 
   handleItemClick() {
@@ -15,8 +14,12 @@ class TodoItem extends Component {
 
   render() {
     // 子组件通过this.props属性，接收父组件传递的值
-    const { content } = this.props;
-    return <li onClick={this.handleItemClick}>{content}</li>;
+    const { content, index } = this.props;
+    return (
+      <li onClick={this.handleItemClick} title="点击设为[已完成]">
+        {index + 1}. {content}
+      </li>
+    );
   }
 }
 

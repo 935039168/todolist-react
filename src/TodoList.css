@@ -1,16 +1,50 @@
-#myinput {
-    box-sizing: border-box;
-    color: gray;
-    height: 65px;
-    padding-left: 20px;
-    font-size: 40px;
+.inputContaint {
     margin: 20px auto 0;
     width: 80%;
-    text-align: center;
-    outline: none;
     position: fixed;
     left: 50%;
     transform: translate3d(-50%, 0px, 0px);
+    display: flex;
+    flex-direction: column;
+}
+
+#myinput {
+    box-sizing: border-box;
+    color: gray;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    font-size: 30px;
+    text-align: center;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.btns {
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: right;
+    z-index: 1;
+    margin-right: 10px;
+}
+
+.btns>span,
+.btn {
+    color: rgba(200, 200, 200, 0.8);
+    padding: 5px 5px;
+}
+
+.btn {
+    cursor: pointer;
+    transition: color 1s;
+}
+
+.btn:hover {
+    color: white;
 }
 
 ::-webkit-input-placeholder {
@@ -28,29 +62,53 @@
     color: #ddd;
 }
 
-ul {
+.itemContainer {
     margin: 95px auto 10px;
+    height: calc(100% - 105px);
+    width: 80%;
+    overflow: auto;
+}
+
+ul {
     list-style-type: none;
     display: flex;
     text-align: left;
     flex-direction: column;
-    width: 80%;
-    height: calc(100% - 105px);
-    overflow: auto;
 }
 
 li {
-    font-size: 40px;
+    font-size: 25px;
     color: white;
     cursor: pointer;
-    width: 100%;
+    width: calc(100% - 8px);
     padding: 0 20px;
-    margin: 5px auto;
+    margin: 3px auto;
     box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.listUl li:hover {
+    text-decoration: line-through;
+}
+
+.doneListUl li {
+    text-decoration: line-through;
+    color: rgba(200, 200, 200, 0.8);
+}
+
+.doneListUl li:hover {
+    color: white;
 }
 
 li:hover {
-    text-decoration: line-through;
-    background-color: rgba(50, 50, 50, 0.1);
-    color: rgba(200, 0, 0, 0.3);
+    background-color: rgba(80, 80, 80, 0.1);
+}
+
+.title {
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 5px 20px;
 }

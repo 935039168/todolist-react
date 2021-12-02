@@ -1,6 +1,6 @@
 html {
-    background-color: gray;
     height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -21,12 +21,14 @@ h1>a {
     color: white;
 }
 
+h1>a:hover {
+    -webkit-filter: drop-shadow(0 0 15px #eebf23);
+    filter: drop-shadow(0 0 15px #eebf23);
+}
+
 #root {
     background-color: gray;
-    /* display: flex; */
     text-align: center;
-    /* justify-content: center; */
-    /* flex-direction: column; */
     width: 100%;
     min-width: 320px;
     height: 100%;
