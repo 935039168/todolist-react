@@ -35,7 +35,7 @@
 .btns>span,
 .btn {
     color: rgba(200, 200, 200, 0.8);
-    padding: 5px 5px;
+    padding: 3px 5px;
 }
 
 .btn {
@@ -63,8 +63,8 @@
 }
 
 .itemContainer {
-    margin: 95px auto 10px;
-    height: calc(100% - 105px);
+    margin: 100px auto 10px;
+    height: calc(100% - 110px);
     width: 80%;
     overflow: auto;
 }
