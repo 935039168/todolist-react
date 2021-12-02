@@ -63,8 +63,8 @@
 }
 
 .itemContainer {
-    margin: 100px auto 10px;
-    height: calc(100% - 110px);
+    margin: 107px auto 10px;
+    height: calc(100% - 117px);
     width: 80%;
     overflow: auto;
 }
@@ -110,5 +110,5 @@ li:hover {
     font-weight: bolder;
     text-align: center;
     letter-spacing: 5px;
-    padding: 5px 20px;
+    padding: 0px 20px 5px;
 }

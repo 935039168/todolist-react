@@ -138,7 +138,7 @@ class TodoList extends Component {
               className="title"
               style={{ display: this.state.list.length > 0 ? "" : "none" }}
             >
-              进行中
+            —进行中—
             </div>
             {this.getListItems()}
           </ul>
@@ -147,7 +147,7 @@ class TodoList extends Component {
               className="title"
               style={{ display: this.state.doneList.length > 0 ? "" : "none" }}
             >
-              已完成
+              —已完成—
             </div>
             {this.getDoneListItems()}
           </ul>
