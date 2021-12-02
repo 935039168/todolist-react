@@ -1,0 +1,36 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+h1 {
+    font-size: 12px;
+    padding: 10px 0;
+    background-color: gray;
+}
+
+h1>a {
+    color: white;
+}
+
+h1>a:hover {
+    -webkit-filter: drop-shadow(0 0 15px #eebf23);
+    filter: drop-shadow(0 0 15px #eebf23);
+}
+
+#root {
+    background-color: gray;
+    text-align: center;
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    overflow: auto;
+}
